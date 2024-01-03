@@ -1,0 +1,47 @@
+public class Book {
+
+	
+	private long id;
+	private String title;
+	private String name;
+	private boolean isavailable;
+	public long getId() {
+		return id;
+	}
+	public void setId(long id) {
+		this.id = id;
+	}
+	public String getTitle() {
+		return title;
+	}
+	public void setTitle(String title) {
+		this.title = title;
+	}
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public boolean isIsavailable() {
+		return isavailable;
+	}
+	public void setIsavailable(boolean isavailable) {
+		this.isavailable = isavailable;
+	}
+	@Override
+	public String toString() {
+		return "Book [id=" + id + ", title=" + title + ", name=" + name + ", isavailable=" + isavailable + "]";
+	}
+	public Book(long id, String title, String name, boolean isavailable) {
+		super();
+		this.id = id;
+		this.title = title;
+		this.name = name;
+		this.isavailable = isavailable;
+	}
+	
+	
+}
+
+
