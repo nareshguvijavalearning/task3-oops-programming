@@ -1,0 +1,47 @@
+public class Salesandincomeimpl {
+
+	public static void main(String[] args) {
+		
+		Scanner scanner = new Scanner(System.in);
+		
+		 System.out.print("Enter Employee ID: ");
+	        int employeeId = scanner.nextInt();
+	        
+	        System.out.print("Enter Employee Name: ");
+	        String employeeName = scanner.nextLine();
+	        scanner.nextLine(); 
+	       
+	        
+	       
+	        System.out.print("Enter Employee Salary:");
+	        double employeeSalary = scanner.nextDouble();
+	        
+	        Employee employee = new Employee(employeeId, employeeName, employeeSalary);
+	        
+	        System.out.println("\nIncome Tax for Employee:");
+	        System.out.println("Employee ID: " + employee.getId());
+	        System.out.println("Employee Name: " + employee.getName());
+	        System.out.println("Employee Salary:" + employee.getSalary());
+	        System.out.println("Income Tax: $" + employee.calculatetax());
+	        
+	        
+	        System.out.print("Enter Product ID: ");
+	        int productId = scanner.nextInt();
+	      
+	        
+	        System.out.print("Enter Product Price:");
+	        double productPrice = scanner.nextDouble();
+	        scanner.nextLine();
+	        System.out.print("Enter Product Quantity: ");
+	        int productQuantity = scanner.nextInt();
+	        
+	        Products product = new Products(productId, productPrice, productQuantity);
+	        System.out.println("Product ID: " + product.getId());
+	        System.out.println("Product Price: $" + product.getPrice());
+	        System.out.println("Product Quantity: " + product.getQuantity());
+	        System.out.println("Sales Tax:" + product.calculatetax());
+
+	        scanner.close();
+	}
+
+}
